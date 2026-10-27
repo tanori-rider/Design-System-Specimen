@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Portfolio - Design System Specimen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <p class="eyebrow">Design System Specimen</p>
+        <h1>Developer Portfolio</h1>
+        <p class="lede">A design system specimen for a developer portfolio using design tokens, components, and patterns.</p>
+    </header>
+
+    <main>
+        <!-- Foundation & Reset -->
+        <section id="s1" class="card">
+            <h2>Foundation & Reset</h2>
+            <p>This section covers the basic styles and resets for the design system.</p>
+            <ul>
+                <li><code>box-sizing: border-box;</code></li>
+                <li><code>margin: 0;</code></li>
+                <li><code>max-width: 100%;</code></li>
+            </ul>
+        </section>
+
+        <!-- Token Inventory -->
+        <section id="s2-tokens" class="card">
+
+            <h2>Token Inventory</h2>
+            <p>Custom design tokens for colors, typography, and spacing.</p>
+
+            <h3>Color Tokens</h3>
+            <div class="color-tokens">
+                <div class="color-token color-action">--color-action</div>
+                <div class="color-token color-accent">--color-accent</div>
+                <div class="color-token color-surface">--color-surface</div>
+            </div>
+
+            <h3>Tokens & Roles</h3>
+            <p>Design tokens and their corresponding roles in the system.</p>
+            <ul>
+                <li><code>--color-action</code> Background color for primary buttons and links.</li>
+                <li><code>--color-accent</code> Accent color for highlights and accents.</li>
+                <li><code>--color-surface</code> Background color for surface elements.</li>
+            </ul>
+        </section>
+
+        <!-- Typography -->
+        <section id="s3-typography" class="card">
+            <h2>Typography</h2>
+            <p class="lede">Demonstration of typography styles using design tokens (heading hierarchy, readable line length,
+                lists, inline code, and font documentation).</p>
+
+            <h3>Technical Cases</h3>
+            <p>Demonstration of predictable type scale and consistent reading measure using design tokens
+                for font sizes, line heights, and spacing. This ensures a cohesive and accessible
+                typographic system across the portfolio.
+            </p>
+
+            <ul>
+                <li>First technical case of an unordered list</li>
+                <li>Second case showing <code>inline-code</code> usage</li>
+                <li>Third case showing line height and spacing adjustments for readability</li>
+            </ul>
+
+            <p><small class="metadata">Font Stack: Roboto, system-ui, sans-serif | 
+                Source: Google Fonts | Fallback: system-ui</small></p>
+        </section>
+
+        <!-- Actions & States -->
+        <section id="s4-actions" class="card">
+            <h2>Actions & States</h2>
+            <p>Demonstration of interactive action controls and their various states (hover, focus, active, disabled).</p>
+
+            <div class="action-controls">
+                <a href="#" class="btn btn-primary">Primary Action</a>
+                <button type="button" class="btn btn-secondary">Secondary Action</button>
+                <button type="button" class="btn btn-primary" disabled>Disabled Action</button>
+                <a href="#">Standard Inline Text Link</a>
+            </div>
+        </section>
+
+        <!-- Surfaces & Content Patterns -->
+        <section id="s5-surfaces" class="card">
+            <h2>Surfaces & Content Patterns</h2>
+            <p>Demonstration of surface elements and content patterns for consistent design implementation.</p>
+
+            <!-- Callout / Notice Box -->
+            <div class="callout">
+                <p><strong>Notice:</strong> Design tokens and components should be used consistently across the portfolio to maintain visual harmony and accessibility.</p>
+            </div>
+
+            <!-- Nested Cards -->
+            <div class="card-grid">
+                <article class="card card-nested">
+                    <h3>Card Title</h3>
+                    <p>This is a nested card component for displaying content within a surface.</p>
+                </article>
+
+                <article class="card card-nested">
+                    <h3>Another Card</h3>
+                    <p>This is another nested card component demonstrating the use of surface elements.</p>
+                </article>
+            </div>
+
+            <!-- Media Placeholder -->
+            <figure class="media-placeholder">
+                <div class="media-box">Media Placeholder</div>
+                <figcaption>Figure 1: Example of a media placeholder for images or videos.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Control Foundations -->
+        <section id="s6-controls" class="card">
+            <h2>Control Foundations</h2>
+            <p>Demonstration of form controls and their states, including input fields, checkboxes, radio buttons, and select dropdowns.</p>
+
+            <form class="control-grid" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="sample-text">Developer Name</label>
+                    <input type="text" id="sample-text" name="sample-text" placeholder="Enter your name">
+                </div>
+
+                <!-- Select Dropdown -->
+                <div class="form-group">
+                    <label for="sample-select">Primary Role</label>
+                    <select id="sample-select" name="sample-select">
+                        <option value="frontend-developer">Frontend Developer</option>
+                        <option value="backend-developer">Backend Developer</option>
+                        <option value="fullstack-developer">Fullstack Developer</option>
+                    </select>
+                </div>
+
+                <!-- Checkbox & Radio Buttons -->
+                <fieldset class="form-group fieldset-controls">
+                    <legend>Preferences & Options</legend>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter" value="subscribe">
+                        Subscribe to newsletter
+                    </label>
+
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="experience-level" value="junior">
+                            Junior Developer
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Form Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
